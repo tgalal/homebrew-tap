@@ -1,20 +1,20 @@
 class Promptcmd < Formula
   desc "Turn GenAI prompts into runnable programs"
   homepage "https://promptcmd.sh"
-  version "1.0.2"
+  version "1.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tgalal/promptcmd/releases/download/v1.0.2/promptcmd-aarch64-apple-darwin.tar.xz"
-      sha256 "d776e5114659e48c2c738d9ea3aaf044b2d0a5bc0a0e0a7e22e4f593225b5824"
+      url "https://github.com/tgalal/promptcmd/releases/download/v1.0.3/promptcmd-aarch64-apple-darwin.tar.xz"
+      sha256 "c4284f68a3afa6f39c233d6771d598fa0a920f653af74b687a979c790774ec60"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tgalal/promptcmd/releases/download/v1.0.2/promptcmd-x86_64-apple-darwin.tar.xz"
-      sha256 "b3e447b227e2cfd0c0ca2773e7dbf53882c673299b86f84973546ba555e82d1a"
+      url "https://github.com/tgalal/promptcmd/releases/download/v1.0.3/promptcmd-x86_64-apple-darwin.tar.xz"
+      sha256 "176cad679f34afa8f619af865488cd44754d2d7fe64b7d98274336138e1f1a27"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/tgalal/promptcmd/releases/download/v1.0.2/promptcmd-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8973c9ea0ac9fb9a5e6883e33840594f0ffe9e9f93daf0dfd59e3a87a8980b44"
+      url "https://github.com/tgalal/promptcmd/releases/download/v1.0.3/promptcmd-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d53e9b8d775cf6c8b9c718d0168e07a811de4e1b6eee5c0dc97834bb6d61feb4"
   end
 
   BINARY_ALIASES = {
